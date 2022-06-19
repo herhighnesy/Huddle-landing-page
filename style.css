@@ -1,0 +1,233 @@
+body{
+    font: 18px/1.3 "open sans";
+    padding:0;
+    margin:0;
+    background: hsl(193, 100%, 96%) url("images/bg-hero-desktop.svg") no-repeat;
+    font-weight: 400;
+}
+/* Global*/
+.container{
+    width:90%;
+    margin:auto;
+    overflow:hidden;
+}
+ h1{
+     font-family: Poppins;
+     font-weight: 600;
+     font-size:33px;
+ }
+ .button-2{
+     background-color: hsl(322, 100%, 66%);
+     padding:20px 10px;
+     text-align: center;
+     width:270px;
+     border-radius:40px;
+    height: 58px;
+    color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ }
+
+ 
+/*header*/
+header{
+    padding-top:50px;
+    height:100px;
+}
+header #logo{
+    float:left;
+}
+header nav{
+    float:right;
+    margin-right:2%;
+}
+header .button-1{
+    margin-top:5px;
+    padding:5px 5px;
+    width:180px;
+    text-align:center;
+    color:hsl(192, 100%, 9%);
+    font-weight:bold;
+    font-size: 15px;
+    background-color: #fff;
+    border-style:none;
+    border-radius: 40px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
+}
+/*section-box*/
+#showcase{
+    min-height: 500px;
+}
+#showcase .left-section{
+    float:left;
+    width:40%;
+    margin-top: 3%;
+}
+#showcase #mockups img{
+    float:right;
+    width:50%;
+    
+}
+/*boxes*/
+#boxes{
+    background-color: #fff;
+    padding:100px 0 200px 0;
+}
+#boxes .box,#boxes .box-2{
+    width:99%;
+    margin: auto;
+    min-height:400px;
+    margin-top:20px;
+    margin-bottom:30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-sizing:border-box;
+}
+#boxes .box div{
+ float:left;
+ width:40%;
+ margin-left:10%;
+ margin-top:8%;
+}
+#boxes .box img{
+    float:right;
+    margin-top:4%;
+    margin-right:5%;
+   max-width:45%;
+ 
+}
+#boxes .box-2 div{
+    float:right;
+    width:40%;
+    margin-right:5%;
+    margin-top:8%;
+}
+#boxes .box-2 img{
+    float:left;
+    margin-left:10%;
+    max-width:45%;
+   
+    margin-top:4%;
+}
+/*getready*/
+#getReady{
+    width:50%;
+    height:200px;
+    position: absolute;
+    overflow:hidden;
+    background-color: #fff;
+    margin-top:-100px;
+    margin-left:25%;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+#getReady button{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:20%;
+}
+#getReady h1{
+    text-align:center;
+    font-weight:700;
+    color:hsl(192, 100%, 9%);
+}
+
+/*footer*/
+#footer{
+    background-color: hsl(192, 100%, 9%);
+    color:#fff;
+}
+#footer .container{
+    padding-top:200px;
+    padding-bottom: 30px;
+}
+#footer .footer-box-1,#footer .footer-box-4{
+    float:left;
+    width:30%;
+    box-sizing: border-box;
+}
+#footer .footer-innerbox{
+    padding-bottom: 20px;
+}
+#footer .footer-box-1 h1{
+    letter-spacing: 4px;
+    display:inline;
+}
+#footer .footer-box-1 .footer-innerbox .my-icon{
+ font-size:40px;
+}
+#footer .footer-innerbox p{
+    display:inline;
+    padding-left:20px;
+}
+#footer .footer-box-2{
+    float:left;
+    width:20%;
+    box-sizing: border-box;
+    padding-top:4%;
+}
+#footer .footer-box-2 ul{
+    list-style: none;
+   
+}
+#footer .footer-box-2 ul li{
+    padding-bottom: 20px;
+}
+.my-icon-2{
+    font-size:50px;
+    margin:10px;
+    margin-top:10%;
+}
+.Copyright{
+    float:right;
+}
+/*media-queries*/
+@media only screen and (max-width: 768px){
+    header{
+        height:50px;
+    }
+    header #logo{
+        max-width:40%;
+        height:auto;
+    }
+    header .button-1{
+        margin-top:0;
+        width:100px;
+        border-radius: 20px;
+       
+    }
+    #showcase .left-section,#showcase #mockups img,#footer .Copyright{
+        float:none;
+        text-align:center;
+        width:100%;
+    }
+    #boxes .box div,#boxes .box-2 div{
+        float:none;
+        width:80%;
+        text-align:center;
+        margin:auto;
+        padding-bottom:7%;
+    }
+    #boxes .box img,#boxes .box-2 img{
+       float:none;
+        display:block;
+        margin-left:auto;
+        margin-right: auto;    
+        padding-top: 10%;   
+        height:auto;
+    }
+    #getReady{
+        width:90%;
+        margin-right:5%;
+        margin-left:5%;
+    }
+    #footer .footer-box-1,#footer .footer-box-2,#footer .footer-box-4{
+        float:none;
+        width:100%;   
+    }
+    #footer .footer-box-4{
+       width:210px;
+       margin:auto;
+    }
+}
+
